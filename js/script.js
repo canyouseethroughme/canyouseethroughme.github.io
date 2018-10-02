@@ -13,16 +13,16 @@ window.onscroll = function () {
 
 //Typewriter
 
-var i = 0;
-var txt = 'Hello, visitor!';
-var speed = 100;
+// let i = 0;
+// let txt = 'Hello, visitor!';
+// let speed = 100;
 
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("typewriter").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
+// function typeWriter() {
+//     if (i < txt.length) {
+//         document.getElementById("typewriter").innerHTML += txt.charAt(i);
+//         i++;
+//         setTimeout(typeWriter, speed);
+//     }
+// }
 
-typeWriter();
+// typeWriter();
