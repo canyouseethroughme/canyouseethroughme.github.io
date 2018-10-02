@@ -1,0 +1,140 @@
+/* D E S K T O P   V E R S I O N */
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    background-color: lightgray;
+}
+
+
+/*----- NavBar -----*/
+
+nav{
+    width: 100vw;
+    height: 7vh;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+nav>ul{
+    float: right;
+    padding-right: 40px;
+}
+
+nav>ul>li{
+    display: inline;
+}
+
+li>a{
+    margin-left: 30px;
+}
+
+
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+
+
+/* -----W R A P P E R------- */
+
+.wrapper{
+    text-align: center;
+    margin-top: 7vh;
+    display: grid;
+    grid-template-columns: .3fr 2fr 1.7fr;
+}
+
+.wrapper>div:nth-child(odd){
+    background-color: #ddd;
+}
+
+.wrapper>div:nth-child(even){
+    background-color:#eee;
+}
+
+.wrapper>div{
+    padding: 20px;
+}
+
+/* ----------------- */
+
+
+.vertical-text{
+    transform: rotate(-90deg);
+}
+
+hr{ 
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);
+    height: 80px;
+    width: 1px;
+}
+
+footer{
+    margin: 10px;
+    height: 3vh;
+    text-align: center;
+}
+
+footer>a{
+    display: inline;
+    
+}
+
+a>img{
+    width: 30px;
+}
+
+
+
+/* Add shadow to NavBar when scrolled */
+.sticky {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
