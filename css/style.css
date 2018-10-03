@@ -15,7 +15,7 @@ body{
     font-family: monospace;
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
     font-size: 2vw;
-    background-color: #404040;
+    background-color: #bfbfbf;
 }
 
 
@@ -151,7 +151,7 @@ a:visited{
 
 .wrapper>div{
     background-color:#bfbfbf;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 
@@ -179,11 +179,49 @@ a:visited{
 }
 
 
+.contactIntro{
+    text-align: justify;
+    color: #404040;
+    padding: 8em 2em;
+}
 
 
+#projectList{
+    padding-top:30vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 50%));
+    
+}
 
+.project-img{
+    width: 25vw;
+    filter: grayscale(100%);
+}
 
+.div-h1>p{
+    padding-left: 2vw;
+    font-size: 2.5vh;
+    color: #404040;
+    text-align: left;
+}
 
+.button-more{
+    border:none;
+    background:none;
+    padding: 0;
+    font-family: monospace;
+    font-size: 3.5vh;
+    color:#737373;
+    text-decoration: underline;
+    margin-top: 10vh;
+}
+
+.project-page>div:last-child{
+    padding: 30vh 2vw;
+    text-align: justify;
+    font-size: 3vh;
+    color: #404040;
+}
 
 
 /* -----P A G E   N U M B E R and F O O T E R------- */
@@ -216,22 +254,41 @@ a:visited{
 
 
 footer{
-    padding-top: 1.5vh; 
-    height: 7vh;
+    padding-top: .5vh; 
+    height: 4vh;
     text-align: center;
-    background-color: white;
+    font-size: 2.5vh;
+    background-color: #bfbfbf;
 }
 
-footer>a{
+footer>p{
+    margin: 0;
+}
+
+.soMe:last-child{
+    padding-top: 33vh;
+}
+.soMe>a{
     display: inline;
     
 }
 
-footer>a>img{
+.soMe:last-child>a>img{
+    padding-top:30vh;
     width: 4vh;
 }
 
+.soMe:last-child>p{
+    text-align: left;
+}
 
+.soMe>p>img{
+    height: 4vh;
+}
+
+.soMe>p>a>img{
+    width: 3vh;
+}
 
 /* Add shadow to NavBar when scrolled */
 .sticky {

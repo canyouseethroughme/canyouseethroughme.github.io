@@ -65,7 +65,7 @@
                 </p>
                 <p>My interests primarily lie in coding websites from skratch with a very big attention to detail and
                     with this I want to make the web a better place because I take the virtual world over the real one
-                    any day. In my spare time I do photography and produce techno music.
+                    any day. In my spare time I do photography and produce music.
                 </p>
             </div>
 
@@ -82,21 +82,37 @@
                 <p>03</p>
                 <p class="vertical-text">PROJECTS</p>
             </div>
-            <div>
-                What is Lorem Ipsum?
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release
-                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                like
-                ing versions of Lorem Ipsum.
+
+
+            <div class="div-projects-parent">
+                <section id="projectList">
+                    <template id="projectTemplate">
+                        <div class="div-projects">
+                            <div class="div-project-img">
+                                <img class="project-img" src="" alt="images">
+                            </div>
+                            <div class="div-h1">
+                                <p class="projects-h1">HEADER</p>
+                            </div>
+
+
+
+                        </div>
+                    </template>
+
+                </section>
+
+                <!-- When this button is clicked we show 3 more projects fetched from Wordpress Api -->
+                <div class="div-button-more">
+                    <button class="button-more">See more</button>
+                </div>
             </div>
 
+
+
             <div>
-                slideshow
+                Older versions of Internet Explorer (4.0 to 8.0) supported a non-standard "filter" property that has
+                been deprecated. This was mostly used for opacity when needed support from IE8 and down.
             </div>
 
         </div>
@@ -108,17 +124,29 @@
                 <p class="vertical-text">CONTACT </p>
             </div>
 
-            <div>
-                What is Lorem Ipsum?
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+
+            <div class="soMe contactIntro">
+                <h3>Let's get in touch!</h3>
+                <p>Write to me an <a href="mailto:stefandrei123@gmail.com" target="_blank" style="text-decoration:underline;color:green">e-mail</a>
+                    or we can
+                    connect on <a href="https://www.linkedin.com/in/andrei-stefan-atudorei-896505bb/" target="_blank"
+                        style="text-decoration:underline;color:blue">LinkedIn</a>.
+                    Also if you want to see some of my work, you can do that by visiting my <a href="https://github.com/canyouseethroughme"
+                        target="_blank" style="text-decoration:underline;color:yellow">GitHub</a>.
+
+                </p>
+
+
+
             </div>
 
-            <div>
-                IMAGE
+            <div class="soMe">
+                <p><img src="/images/telephone.png"> +45.52.22.55.85</p>
+                <p><img src="/images/location.png"> Copenhagen, Denmark</p>
+
+                <a href="mailto:stefandrei123@gmail.com" target="_blank"><img src="images/email.png"></a>
+                <a href="https://www.linkedin.com/in/andrei-stefan-atudorei-896505bb/" target="_blank"><img src="images/linkedin.png"></a>
+                <a href="https://github.com/canyouseethroughme" target="_blank"><img src="images/github.png"></a>
             </div>
 
 
@@ -126,13 +154,12 @@
         </div>
 
         <footer>
-            <a href="mailto:stefandrei123@gmail.com" target="_blank"><img src="images/email.png"></a>
-            <a href="https://www.linkedin.com/in/andrei-stefan-atudorei-896505bb/" target="_blank"><img src="images/linkedin.png"></a>
-            <a href="https://github.com/canyouseethroughme" target="_blank"><img src="images/github.png"></a>
+            <p>Stefan Andrei Portfolio Website</p>
         </footer>
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/fetch.js"></script>
 </body>
 
 </html>
