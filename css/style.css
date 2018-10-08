@@ -34,23 +34,33 @@ nav{
 }
 
 nav>ul{
+    height: 100%;
+    width: auto;
+    font-size: 3vh;
     margin: 0;
     float: right;
-    padding: .8vh 4vw;
+    padding: 2vh 4vw;
     font-weight: lighter;
-    font-size: 2.5vw;
+   
     color: #404040;
     margin-top: 0;
 }
 
 nav>ul>li{
     display: inline;
-    font-size: 3vh;
 }
 
-/* li>a{
-    margin-left: 30px;
-} */
+.logo{
+    position: absolute;
+    left: 3vw;
+    width: 65px;
+    top: 5px;
+}
+
+
+
+
+
 
 
 a:link{
@@ -89,8 +99,19 @@ a:visited{
     width: 100%;
   }
 
+  /* Add shadow to NavBar when scrolled */
 
+  .shadow-anim{
+      animation: createShadow .4s linear forwards;
+  }
 
+  @keyframes createShadow{
+      
+      to{
+          opacity: .9;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.39), 0 8px 22px 0 rgba(0, 0, 0, 0.13);
+      }
+  } 
 
 
 
@@ -154,7 +175,7 @@ a:visited{
 
 .wrapper>div{
     background-color:#bfbfbf;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 
@@ -298,10 +319,7 @@ footer>p{
     width: 3vh;
 }
 
-/* Add shadow to NavBar when scrolled */
-.sticky {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 
 
 /*------M O B I L E    V E R S I O N-----*/
@@ -309,15 +327,21 @@ footer>p{
 
 @media only screen and (max-width: 900px) {
     
-    .underline:hover:after{
+    .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after{
         display: none;
     }
 
     nav>ul{
-        padding: 2vh 2vw;
+        padding: 1.5vh 2vw;
     }
     nav>ul>li{
         font-size: 5vw;
+    }
+
+    .logo{
+        width: 50px;
     }
 
 
@@ -334,13 +358,13 @@ footer>p{
 
     .box1{
         grid-column: 1;
-        grid-row: 1/3;
+        grid-row: 1;
     }
 
    
 
     .box2{
-        grid-column: 2;
+        grid-column: 1/3;
         grid-row: 2;
 
     }
@@ -360,17 +384,19 @@ footer>p{
         grid-row: 1;
     }
     .box6{
-        grid-column: 2;
+        grid-column: 1/3;
         grid-row: 2;
 
     }
 
     .typewriter{
-        padding: 0;
-        height: 10vh;
+    padding: 0 11vw;
+    height: 10vh;
     }
     .typewriter h1{
-        float: left;
+        float: none;
+        margin: auto;
+        text-align: center;
         font-size: 6.3vw;
     }
   
@@ -386,12 +412,12 @@ footer>p{
     }
 
     .page2{
-        padding: 14vh 2vw 8vh 2vw;
+        padding: 14vh 6vw 8vh 2vw;
         font-size: 4vw;
     }
 
     .project-page>div:last-child{
-        padding: 14vh 2vw 8vh 2vw;
+        padding: 14vh 6vw 8vh 2vw;
         font-size: 4vw;
     }
 
@@ -401,10 +427,11 @@ footer>p{
     }
     .div-h1>p{
         font-size: 4vw;
+        text-align: center;
     }
 
     .project-img{
-        width: 60vw;
+        width: 70vw;
     }
 
     .button-more{
@@ -412,7 +439,7 @@ footer>p{
     }
 
     .contactIntro{
-        padding: 14vh 2vw 8vh 2vw;
+        padding: 14vh 6vw 8vh 2vw;
         font-size: 4vw;
     }
 
@@ -421,10 +448,12 @@ footer>p{
     }
     
     .contact-page>div:last-child{
-        padding: 2vw;
+        padding: 4vw ;
+        
     }
     .contact-page>div:last-child>p{
         font-size: 4vw;
+        text-align: center;
     }
     .soMe:last-child>a>img{
         padding-top:2vw;
