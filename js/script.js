@@ -5,11 +5,8 @@
 window.onscroll = function () {
     if (window.pageYOffset > 10) {
         document.querySelector("nav").classList.add("shadow-anim");
-
     } else {
         document.querySelector("nav").classList.remove("shadow-anim");
-
-
     }
 };
 
