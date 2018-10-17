@@ -223,13 +223,15 @@ a:visited{
 
 .page2>img{
     height: 70vh;
-    clip-path: polygon(31% 2%, 93% 1%, 75% 93%, 18% 100%, 37% 57%);
+    clip-path: polygon(70% 1%, 80% 32%, 66% 84%, 38% 96%, 54% 57%, 32% 4%);
     filter: grayscale(100%);
     transition: 1s;
 }
 
 .page2>img:hover{
     filter: grayscale(0%);
+    clip-path: polygon(78% 0, 97% 34%, 89% 94%, 38% 96%, 23% 72%, 31% 0);
+
 }
 
 #about>.box6{
