@@ -16,9 +16,10 @@ body{
     font-family: monospace;
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
     font-size: 2vw;
-    background-color: #bfbfbf;
-    
+    background-color: #bfbfbf; 
 }
+
+
 
 
 /*----- NavBar -----*/
@@ -221,7 +222,14 @@ a:visited{
 }
 
 .page2>img{
-    width: 40vh;
+    height: 70vh;
+    clip-path: polygon(31% 2%, 93% 1%, 75% 93%, 18% 100%, 37% 57%);
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.page2>img:hover{
+    filter: grayscale(0%);
 }
 
 #about>.box6{
@@ -238,7 +246,7 @@ a:visited{
 .project-img{
     width: 25vw;
     filter: grayscale(100%);
-    transition: 1s;
+    transition: 1s ease;
 }
 
 .project-img:hover{
@@ -505,10 +513,7 @@ footer>p{
         font-size: 4vw;
         text-align: center;
     }
-    .soMe:last-child>a>img{
-        padding-top:2vw;
-        width: 3vh;
-    }
+
 
     #contact>.box6>p{
         text-align: center;
@@ -520,8 +525,37 @@ footer>p{
 
 
 
+}
 
 
+/* ----- S U B P A G E ------*/
 
+.subpage{
+    margin: 10vw;
+}
 
+.subpage>h1{
+    text-align:center;
+    font-size: 3vh;
+    color: #737373;
+}
+
+.subpage>div>img{
+    width: 50vw;
+}
+
+.subpage>div{
+    text-align:center;
+}
+
+.subpage>div>p{
+    text-align: left;
+    font-size: 2vh;
+    padding: 3vh 10vw;
+    color: #404040;
+}
+
+.subpage>div>div>a{
+    font-size: 3vh;
+    color: #FB3640;
 }
