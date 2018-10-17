@@ -53,8 +53,8 @@ nav>ul>li{
 .logo{
     position: absolute;
     left: 3vw;
-    width: 65px;
-    top: 5px;
+    width: 60px;
+    top: 7px;
 }
 
 
@@ -238,6 +238,15 @@ a:visited{
 .project-img{
     width: 25vw;
     filter: grayscale(100%);
+    transition: 1s;
+}
+
+.project-img:hover{
+    filter: grayscale(0%);
+}
+
+.div-project-img:hover{
+    cursor: pointer;
 }
 
 .div-h1>p{
@@ -256,6 +265,10 @@ a:visited{
     color:#737373;
     text-decoration: underline;
     margin-top: 6vh;
+}
+
+.button-more:hover{
+    cursor: pointer;
 }
 
 .div-resume{
@@ -350,6 +363,10 @@ footer>p{
     font-size: 2.5vh;
 }
 
+#contact>.box6{
+    padding-top: 45vh;
+}
+
 
 
 
@@ -373,6 +390,7 @@ footer>p{
     }
 
     .logo{
+        top: 10px;
         width: 50px;
     }
 
@@ -492,7 +510,13 @@ footer>p{
         width: 3vh;
     }
 
-
+    #contact>.box6>p{
+        text-align: center;
+        font-size: 2vh;
+    }
+    #contact>.box6{
+        padding-top: 10vh;
+    }
 
 
 

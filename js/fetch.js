@@ -27,6 +27,7 @@ function showProjects(data) {
     console.log(data)
     lookingForData = false;
     data.forEach(showSingleProject);
+
 }
 
 function showSingleProject(aProject) {
@@ -37,9 +38,9 @@ function showSingleProject(aProject) {
         clone.querySelector(".project-img").setAttribute("src", aProject.acf.my_projects_images.url);
     }
 
-
-
+    clone.querySelector(".onTopClick").href = "subpage.html?id=" + aProject.id;
     list.appendChild(clone);
+
 }
 fetchProjects();
 
