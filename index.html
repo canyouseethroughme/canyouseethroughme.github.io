@@ -1,179 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="/images/logo.png" type="png" sizes="20x20">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="/images/logo.png" type="png" sizes="20x20" />
     <title>Stefan Andrei Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <a href="#landing"><img class="logo" src="/images/logo.png"></a>
+      <nav class="menu">
+        <ul>
+          <a href="#landing"><img class="logo" src="/images/logo.png"/></a>
 
-                <li><a href="#about" class="underline">About</a></li>
-                <li><a href="#projects" class="underline">Projects</a></li>
-                <li><a href="#contact" class="underline">Contact</a></li>
-            </ul>
-        </nav>
+          <li><a href="#about" class="underline">About</a></li>
+          <li><a href="#projects" class="underline">Projects</a></li>
+          <li><a href="#contact" class="underline">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <div id="landing" class="landing-page wrapper">
+        <div class="page-number box1">
+          <p>01</p>
+          <p class="vertical-text">INTRO</p>
+        </div>
 
-        <div id="landing" class="landing-page wrapper">
+        <div class="typewriter box2">
+          <h1>Welcome, visitor!</h1>
+        </div>
 
-            <div class="page-number box1">
-                <p>01</p>
-                <p class="vertical-text">INTRO</p>
-            </div>
-
-            <div class="typewriter box2">
-                <h1>Welcome, visitor!</h1>
-            </div>
-
-            <!-- <div class="typewriter">
+        <!-- <div class="typewriter">
                 <h2 id="typewriter"></h2> -->
 
+        <div class="banner-holder box3">
+          <div class="banner-holderImage"></div>
+          <!-- <img src="images/picOfMe.png"> -->
+        </div>
+      </div>
 
-            <div class="banner-holder box3">
-                <div class="banner-holderImage"></div>
-                <!-- <img src="images/picOfMe.png"> -->
-            </div>
+      <div id="about" class="about-page wrapper">
+        <div class="page-number box1">
+          <p>02</p>
+          <p class="vertical-text">ABOUT</p>
         </div>
 
+        <div class="page2 box5">
+          <p>
+            I am <span style="color:#FB3640">ANDREI</span>, a romanian Front-End
+            Developer that lives in COPENHAGEN and studies MULTIMEDIA DESIGN &
+            COMMUNICATION @ KEA.
+          </p>
+          <p>
+            Languages that I speak: <span style="color:blue">HTML</span>,
+            <span style="color: green">CSS</span> and
+            <span style="color:yellow">JavaScript</span>.
+          </p>
+          <p>
+            SKILLS: CMS / .git / SVG / GSAP / NPM / ParcelJS /// ADOBE ===
+            Photoshop / Illustrator / XD / After Effects / Lightroom.
+          </p>
+          <p>
+            My interests primarily lie in coding websites from scratch with
+            great attention to detail. With this I want to make the web a better
+            place because I would take the virtual world over the real one any
+            day. In my spare time I do photography and produce music.
+          </p>
 
-        <div id="about" class="about-page wrapper">
+          <div class="div-resume">
+            <button class="button-resume">
+              <a href="/images/Andrei-Stefan-Atudorei_CV.pdf" target="_blank"
+                >See my resume</a
+              >
+            </button>
+          </div>
+        </div>
 
-            <div class="page-number box1">
-                <p>02</p>
-                <p class="vertical-text">ABOUT </p>
-            </div>
+        <div class="page2 box6">
+          <img src="/images/me-about.png" />
+        </div>
+      </div>
 
-            <div class="page2 box5">
-                <p>I am <span style="color:#FB3640">ANDREI</span>, a romanian Front-End Developer that lives in
-                    COPENHAGEN
-                    and studies MULTIMEDIA DESIGN & COMMUNICATION
-                    @
-                    KEA.
-                </p>
-                <p>Languages that I speak: <span style="color:blue">HTML</span>, <span style="color: green">CSS</span>
-                    and <span style="color:yellow">JavaScript</span>.
-                </p>
-                <p>SKILLS: CMS / .git / SVG
-                    / GSAP /
-                    NPM / ParcelJS /// ADOBE === Photoshop / Illustrator / XD / After Effects / Lightroom.
-                </p>
-                <p>My interests primarily lie in coding websites from scratch with great attention to detail.
-                    With this I want to make the web a better place because I would take the virtual world over the
-                    real one
-                    any day. In my spare time I do photography and produce music.
-                </p>
+      <div id="projects" class="project-page wrapper">
+        <div class="page-number box1">
+          <p>03</p>
+          <p class="vertical-text">PROJECTS</p>
+        </div>
 
-                <div class="div-resume">
-                    <button class="button-resume"><a href="/images/resume-andrei-atudorei.pdf" target="_blank">See my
-                            resume</a></button>
+        <div class="div-projects-parent box2">
+          <section id="projectList">
+            <template id="projectTemplate">
+              <div class="div-projects">
+                <a class="onTopClick">
+                  <div class="div-project-img">
+                    <img class="project-img" src="" alt="images" />
+                  </div>
+                </a>
+                <div class="div-h1">
+                  <p class="projects-h1">HEADER</p>
                 </div>
+              </div>
+            </template>
+          </section>
 
-            </div>
-
-            <div class="page2 box6">
-                <img src="/images/me-about.png">
-            </div>
-
-
+          <div class="div-button-more">
+            <button class="button-more">See more</button>
+          </div>
         </div>
 
-        <div id="projects" class="project-page wrapper">
+        <div class="box3">
+          <p>A part of the projects I've worked at in the last 2 years.</p>
+        </div>
+      </div>
 
-            <div class="page-number box1">
-                <p>03</p>
-                <p class="vertical-text">PROJECTS</p>
-            </div>
-
-
-            <div class="div-projects-parent box2">
-                <section id="projectList">
-                    <template id="projectTemplate">
-                        <div class="div-projects">
-                            <a class="onTopClick">
-                                <div class="div-project-img">
-                                    <img class="project-img" src="" alt="images">
-                                </div>
-                            </a>
-                            <div class="div-h1">
-                                <p class="projects-h1">HEADER</p>
-                            </div>
-
-
-
-
-                        </div>
-                    </template>
-
-                </section>
-
-
-                <div class="div-button-more">
-                    <button class="button-more">See more</button>
-                </div>
-            </div>
-
-
-
-            <div class="box3">
-                <p>A part of the projects I've worked at in the last year.</p>
-            </div>
-
+      <div id="contact" class="contact-page wrapper">
+        <div class="page-number box1">
+          <p>04</p>
+          <p class="vertical-text">CONTACT</p>
         </div>
 
-        <div id="contact" class="contact-page wrapper">
-
-            <div class="page-number box1">
-                <p>04</p>
-                <p class="vertical-text">CONTACT </p>
-            </div>
-
-
-            <div class="soMe contactIntro box5">
-                <h3>Let's get in touch</h3>
-                <p>If you wanna get in touch, talk to me about a project collaboration or just say hi, send an <a href="mailto:stefandrei123@gmail.com"
-                        target="_blank" style="color:green">e-mail</a> to
-                    me
-                    and ~let's talk.</p>
-                <br>
-                <h3>Let's get social</h3>
-                <p>Follow my online profiles on <a href="https://www.linkedin.com/in/andrei-stefan-atudorei-896505bb/"
-                        target="_blank" style="color:blue">LinkedIn</a>
-                    or <a href="https://github.com/canyouseethroughme" target="_blank" style="color:yellow">GitHub</a>.
-
-                </p>
-
-
-
-            </div>
-
-            <div class="soMe box6">
-                <p>_tel: +45.52.22.55.85</p>
-                <p>_location: Copenhagen, Denmark</p>
-
-
-            </div>
-
-
-
+        <div class="soMe contactIntro box5">
+          <h3>Let's get in touch</h3>
+          <p>
+            If you wanna get in touch, talk to me about a project collaboration
+            or just say hi, send an
+            <a
+              href="mailto:stefandrei123@gmail.com"
+              target="_blank"
+              style="color:green"
+              >e-mail</a
+            >
+            to me and ~let's talk.
+          </p>
+          <br />
+          <h3>Let's get social</h3>
+          <p>
+            Follow my online profiles on
+            <a
+              href="https://www.linkedin.com/in/andrei-stefan-atudorei-896505bb/"
+              target="_blank"
+              style="color:blue"
+              >LinkedIn</a
+            >
+            or
+            <a
+              href="https://github.com/canyouseethroughme"
+              target="_blank"
+              style="color:yellow"
+              >GitHub</a
+            >.
+          </p>
         </div>
 
-        <footer>
-            <p>Stefan Andrei Portfolio Website</p>
-        </footer>
+        <div class="soMe box6">
+          <p>_tel: +45.52.22.55.85</p>
+          <p>_location: Copenhagen, Denmark</p>
+        </div>
+      </div>
+
+      <footer>
+        <p>Stefan Andrei Portfolio Website</p>
+      </footer>
     </main>
 
     <script src="/js/script.js"></script>
     <script src="/js/fetch.js"></script>
-</body>
-
+  </body>
 </html>
